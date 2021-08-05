@@ -22,10 +22,7 @@ class Payment:
             updated_sum = sum + CGST + SGST
 
         print(">> Your total amount of all items is ₹ : ", sum)
-        # print("CGST is:                                 ",CGST)
-        # print("SGST is:                                 ",SGST,"\n"*2)
-        # print("Final amount to be paid after CGST and SGST is ₹ : ",updated_sum)
-
+        
         x = PrettyTable()
         x.field_names = ["CGST", "SGST", "Total"]
         x.add_row([CGST, SGST, updated_sum])
